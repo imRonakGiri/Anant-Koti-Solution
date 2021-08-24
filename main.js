@@ -1,73 +1,75 @@
-const year = new Date(),
-  $1 = document,
-  $ = (i) => $1.querySelector(i),
-  $2 = (i, m) => ($(i).innerHTML = m),
-  $4 = (i) => $1.createElement(i),
-  $5 = (m) => $(m).appendChild(i),
-  $6 = (m) => (i.innerHTML = m),
-  $7 = (i, m) => ($6(i), $5(m)),
-  website = {
-    menu: ["home", "services", "gallery", "contect"],
-  };
-i = $4("ul");
-i.classList.add("menu");
-$5("main");
-i = $4("div");
-i.classList.add("content");
-$5("main");
+const $_ = document,
+  $ = (i) => $_.querySelector(i),
+  $2 = (i) => $_.createElement(i),
+  $3 = (m) => $(m).appendChild(i),
+  $4 = (im, m) => ((i.innerHTML = im), $3(m)),
+  $5 = (m, im) => (i.classList.add(m), $3(im));
+website = {
+  menu: ["home", "services", "gallery", "contect"],
+  classes: [".home", ".services", ".gallery", ".contect"],
+};
+i = $2("ul");
+$5("menu", "main");
+i = $2("div");
+$5("content", "main");
 website.menu.forEach((m) => {
-  i = $4("li");
+  i = $2("li");
   i.setAttribute("class", "menu-itm");
-  $7(m.toUpperCase(), ".menu");
+  $4(m.toUpperCase(), ".menu");
 });
-$1.addEventListener("click", whoIs);
-i = $4("div");
-i.classList.add("contect");
-$5(".content");
-i = $4("div");
-i.classList.add("services");
-$5(".content");
-i = $4("div");
-i.classList.add("contect-1");
-$5(".contect");
-i = $4("div");
-i.classList.add("contect-2");
-$5(".contect");
-i = $4("h2");
-$7(`RonakGiri Goswami`, ".contect-1");
-i = $4("p");
-$7(
-  `<img src="Anant koti solution.jpg">`,
-  ".contect-2"
-);
-i = $4("p");
-$7(`175 Nandanvan Soc, Near Matrushakti, Punagam-395010, Surat`, ".contect-2");
-i = $4("p");
-$7(`+91 6354852905<br>GoswamiRonakGiri38@gmail.com `, ".contect-1");
-i = $4("p");
-$7(`+91 9429700108/brainfoodsrt@gmail.com`, ".contect-2");
-i = $4("h2");
-$7("National & InterNational Courier Booking", ".services");
+$_.addEventListener("click", RoanakGiri);
+i = $2("div");
+$5("home", ".content");
+i = $2("div");
+$5("services", ".content");
+i = $2("div");
+$5("gallery", ".content");
+i = $2("div");
+$5("contect", ".content");
+i = $2("div");
+$5("contect-1", ".contect");
+i = $2("div");
+$5("contect-2", ".contect");
+i = $2("h2");
+$4(`RonakGiri Goswami`, ".contect-1");
+i = $2("p");
+$4(`<img src="Anant koti solution.jpg">`, ".contect-2");
+i = $2("p");
+$4(`175 Nandanvan Soc, Near Matrushakti, Punagam-395010, Surat`, ".contect-2");
+i = $2("p");
+$4(`+91 6354852905<br>GoswamiRonakGiri38@gmail.com `, ".contect-1");
+i = $2("p");
+$4(`+91 9429700108/brainfoodsrt@gmail.com`, ".contect-2");
+i = $2("h2");
+$4("National & InterNational Courier Booking", ".services");
 $(".menu *:nth-child(1)").classList.add("acctive");
-display();
-function display() {
-  $(".acctive").innerHTML === "CONTECT"
-    ? ($(".contect").style.display = "")
-    : ($(".contect").style.display = "none");
-  $(".acctive").innerHTML === "SERVICES"
-    ? ($(".services").style.display = "")
-    : ($(".services").style.display = "none");
-}
-function whoIs(i) {
+function RoanakGiri(i) {
   for (w = 1; w <= website.menu.length; w++) {
     pathofclick = ".menu *:nth-child(" + w + ")";
     if (i.path[0].innerHTML === $(pathofclick).innerHTML) {
-      acctiveLess(i);
+      dNone();
+      $(".acctive").classList.remove("acctive");
+      i.path[0].classList.add("acctive");
+      switch ($(".acctive").innerHTML) {
+        case "HOME":
+          $(".home").style.display = "";
+          break;
+        case "SERVICES":
+          $(".services").style.display = "";
+          break;
+        case "CONTECT":
+          $(".contect").style.display = "";
+          break;
+        case "GALLERY":
+          $(".gallery").style.display = "";
+      }
     }
   }
 }
-function acctiveLess(m) {
-  $(".acctive").classList.remove("acctive");
-  m.path[0].classList.add("acctive");
-  display();
+function dNone() {
+  $(".gallery").style.display = "none";
+  $(".home").style.display = "none";
+  $(".services").style.display = "none";
+  $(".contect").style.display = "none";
 }
+dNone();
