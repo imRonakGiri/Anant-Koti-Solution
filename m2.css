@@ -1,0 +1,47 @@
+@media only screen and (max-width: 38rem) and (min-width: 21rem) {
+  .content * {
+    text-align: center;
+    color: rgb(53, 58, 58);
+  }
+  .contect,
+  .services,
+  .gallery,
+  .home {
+    height: 50vh;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  div.contect-2 > p:nth-child(2),
+  div.contect-1 > p:nth-child(2) {
+    margin: 2%;
+    font-size: 1.2rem;
+  }
+  div.contect {
+    top: 37vh;
+  }
+  div.contect img {
+    height: 33vh;
+  }
+  div.gallery {
+    top: 28vh;
+  }
+  div.services {
+    top: 28vh;
+  }
+  div.home {
+    top: 25vh;
+  }
+}
+@media only screen and (max-width: 21rem) {
+  body {
+    display: none;
+  }
+}
+@media only screen and (min-width: 38rem) {
+  body {
+    display: none;
+  }
+}
