@@ -3,33 +3,25 @@ const $_ = document,
   $2 = (i) => $_.createElement(i),
   $3 = (m) => $(m).appendChild(i),
   $4 = (im, m) => ((i.innerHTML = im), $3(m)),
-  $5 = (m, im) => (i.classList.add(m), $3(im));
+  $5 = (m, im) => (i.classList.add(m), $3(im)),
+  $6 = (a, b) => ((i = $2("div")), $5(a, b));
 website = {
   menu: ["home", "services", "gallery", "contect"],
-  classes: [".home", ".services", ".gallery", ".contect"],
 };
-i = $2("ul");
-$5("menu", "main");
-i = $2("div");
-$5("content", "main");
+$6("menu", "main");
+$6("content", "main");
+$6("home", ".content");
+$6("services", ".content");
+$6("gallery", ".content");
+$6("contect", ".content");
+$6("contect-1", ".contect");
+$6("contect-2", ".contect");
 website.menu.forEach((m) => {
   i = $2("li");
   i.setAttribute("class", "menu-itm");
   $4(m.toUpperCase(), ".menu");
 });
 $_.addEventListener("click", RoanakGiri);
-i = $2("div");
-$5("home", ".content");
-i = $2("div");
-$5("services", ".content");
-i = $2("div");
-$5("gallery", ".content");
-i = $2("div");
-$5("contect", ".content");
-i = $2("div");
-$5("contect-1", ".contect");
-i = $2("div");
-$5("contect-2", ".contect");
 i = $2("h2");
 $4(`RonakGiri Goswami`, ".contect-1");
 i = $2("p");
