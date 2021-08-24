@@ -37,7 +37,7 @@ i = $4("h2");
 $7(`RonakGiri Goswami`, ".contect-1");
 i = $4("p");
 $7(
-  `<img src="https://drive.google.com/uc?id=1unJ_GDg2HLa3pJ-qykE8MVgd4l7zRz2b&export=download">`,
+  `<img src="Anant koti solution.jpg">`,
   ".contect-2"
 );
 i = $4("p");
