@@ -8,7 +8,8 @@ const $_ = document,
 website = {
   menu: ["home", "services", "gallery", "contect"],
 };
-$6("menu", "main");
+i = $2("ul");
+$5("menu", "main");
 $6("content", "main");
 $6("home", ".content");
 $6("services", ".content");
