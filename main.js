@@ -5,8 +5,7 @@ const $_ = document,
   $4 = (im, m) => ((i.innerHTML = im), $3(m)),
   $5 = (m, im) => (i.classList.add(m), $3(im));
 website = {
-  menu: ["home", "services", "gallery", "contect"],
-  classes: [".home", ".services", ".gallery", ".contect"],
+  menu: ["home", "services", "gallery", "contect"]
 };
 i = $2("ul");
 $5("menu", "main");
