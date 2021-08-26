@@ -8,82 +8,6 @@
       name="description"
       content="Booking of all types of National & International Courier, Bus, Train, Aircraft !"
     />
-    <style>
-      *,
-      *::before,
-      *::after {
-        padding: 0%;
-        margin: 0%;
-        box-sizing: border-box;
-        text-align: center;
-      }
-      @media only screen and (max-width: 38rem) and (min-width: 17rem) {
-        body {
-          display: flex;
-          flex-direction: column;
-        }
-        .content,
-        header,
-        footer {
-          place-content: center;
-          align-items: center;
-        }
-        header {
-          display: flex;
-        }
-        header .title {
-          font-size: 1.8rem;
-          text-shadow: 2px 2px 10px green;
-          color: rgb(236, 0, 0);
-        }
-        .menu {
-          display: flex;
-          list-style: none;
-          flex-direction: column;
-        }
-        li.menu-itm {
-          cursor: pointer;
-          padding-top: 2%;
-          padding-bottom: 2%;
-          text-align: center;
-          font-weight: 900;
-        }
-        li.menu-itm.acctive {
-          color: #171e62;
-          font-size: 1.5em;
-          margin-bottom: 60.5vh;
-          transition-delay: 0.1s;
-          text-shadow: 1px 3px 6px rgb(21, 40, 102);
-        }
-        li.menu-itm.acctive + li:not(.acctive) {
-          border-top: solid 0px;
-        }
-        .menu li:not(.acctive) {
-          color: #00819d;
-          border: solid 1px;
-        }
-        .menu li:not(.acctive) + li:not(.acctive) {
-          border-top: solid 0px;
-        }
-        footer {
-          bottom: 3%;
-          width: 100vw;
-          display: flex;
-          font-weight: 400;
-          position: absolute;
-          color: rgb(0, 0, 0);
-          text-shadow: 1px 3px 5px rgb(28, 49, 117);
-        }
-      }
-      @media only screen and (max-width: 21rem) {
-        header .title {
-          font-size: 1.5rem;
-        }
-        footer {
-          font-size: 0.9rem;
-        }
-      }
-    </style>
     <title>Anant Koti Solution</title>
   </head>
   <body>
@@ -97,6 +21,84 @@
       <div class="copyright">Copyright &copy;2018-2021 Anant Koti Solution</div>
     </footer>
   </body>
+  <style>
+    *,
+    *::before,
+    *::after {
+      padding: 0%;
+      margin: 0%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    @media only screen and (max-width: 38rem) {
+      header .title {
+        font-size: 2.2rem;
+        text-shadow: 2px 2px 10px green;
+        color: rgb(236, 0, 0);
+      }
+      li.menu-itm {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-weight: 900;
+      }
+      li.menu-itm.acctive {
+        color: #1b2155;
+        font-size: 1.4em;
+        margin-bottom: 60.5vh;
+        transition-delay: 0.1s;
+        text-shadow: 1px 3px 6px rgb(21, 40, 102);
+      }
+      .menu li:not(.acctive) {
+        color: #00819d;
+        border: solid 1px;
+      }
+      .menu li.acctive + li:not(.acctive),
+      li:not(.acctive) + li:not(.acctive) {
+        border-top: solid 0px;
+      }
+    }
+    @media only screen and (max-width: 38rem) {
+      div.content > * {
+        padding: 5%;
+        height: 50vh;
+        width: 100vw;
+        position: absolute;
+      }
+      div.contect {
+        top: 35vh;
+      }
+      div.gallery {
+        top: 28vh;
+      }
+      div.services {
+        top: 24vh;
+      }
+      div.home {
+        top: 17vh;
+      }
+    }
+    footer {
+      bottom: 0%;
+      height: 8vh;
+      width: 100%;
+      position: absolute;
+      color: rgb(0, 0, 0);
+      text-shadow: 1px 3px 5px rgb(28, 49, 117);
+    }
+    @media only screen and (max-width: 21rem) {
+      header .title {
+        font-size: 1.5rem;
+      }
+      footer {
+        font-size: 0.9rem;
+      }
+    }
+    @media only screen and (min-width: 38rem) {
+      body {
+        display: none;
+      }
+    }
+  </style>
   <script>
     const $_ = document,
       $ = (i) => $_.querySelector(i),
@@ -125,10 +127,6 @@
     $_.addEventListener("click", RoanakGiri);
     i = $2("h2");
     $4(`RonakGiri Goswami`, ".contect-1");
-    if (window.innerHeight > 560 && window.innerHeight < 800) {
-      i = $2("p");
-      $4(`<img src="Anant koti solution.jpg">`, ".contect-2");
-    }
     i = $2("p");
     $4(
       `175 Nandanvan Soc, Near Matrushakti, Punagam-395010, Surat`,
@@ -172,53 +170,4 @@
     }
     dNone();
   </script>
-  <style>
-    @media only screen and (max-width: 38rem) and (min-width: 17rem) {
-      .content * {
-        text-align: center;
-        color: rgb(53, 58, 58);
-      }
-      .contect,
-      .services,
-      .gallery,
-      .home {
-        height: 50vh;
-        display: flex;
-        position: absolute;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-evenly;
-      }
-      div.contect-2 > p:nth-child(2),
-      div.contect-1 > p:nth-child(2) {
-        margin: 2%;
-        font-size: 1.2rem;
-      }
-      div.contect {
-        top: 35vh;
-      }
-      div.contect img {
-        height: 33vh;
-      }
-      div.gallery {
-        top: 28vh;
-      }
-      div.services {
-        top: 28vh;
-      }
-      div.home {
-        top: 25vh;
-      }
-    }
-    @media only screen and (max-width: 17rem) {
-      body {
-        display: none;
-      }
-    }
-    @media only screen and (min-width: 38rem) {
-      body {
-        display: none;
-      }
-    }
-  </style>
 </html>
