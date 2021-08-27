@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-color: cornflowerblue;
+}
+.title {
+  background-color: rgb(86, 161, 161);
+}
+.copyright {
+  background-color: rgb(130, 160, 95);
+}

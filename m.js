@@ -1,10 +1,3 @@
-const $_ = document,
-  $ = (i) => $_.querySelector(i),
-  $2 = (i) => $_.createElement(i),
-  $3 = (m) => $(m).appendChild(i),
-  $4 = (im, m) => ((i.innerHTML = im), $3(m)),
-  $5 = (m, im) => (i.classList.add(m), $3(im)),
-  $6 = (a, b) => ((i = $2("div")), $5(a, b));
 website = {
   menu: ["home", "services", "gallery", "contect"],
 };
