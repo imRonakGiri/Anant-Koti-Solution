@@ -1,6 +1,3 @@
-website = {
-  menu: ["home", "services", "gallery", "contect"],
-};
 i = $2("ul");
 $5("menu", "main");
 $6("content", "main");
@@ -11,6 +8,7 @@ $6("contect", ".content");
 $6("contect-1", ".contect");
 $6("contect-2", ".contect");
 $6("contect-3", ".contect");
+$6("book", "main");
 website.menu.forEach((m) => {
   i = $2("li");
   i.setAttribute("class", "menu-itm");
@@ -33,6 +31,8 @@ $4(`+91 6354852905<br>GoswamiRonakGiri38@gmail.com `, ".contect-2");
 i = $2("p");
 $4(`175 Nandanvan Soc, Near Matrushakti, Punagam-395010, Surat`, ".contect-3");
 $(".menu *:nth-child(1)").classList.add("acctive");
+dNone();
+$(".home").style.display = "";
 function RoanakGiri(i) {
   for (w = 1; w <= website.menu.length; w++) {
     pathofclick = ".menu *:nth-child(" + w + ")";
@@ -62,4 +62,3 @@ function dNone() {
   $(".services").style.display = "none";
   $(".contect").style.display = "none";
 }
-dNone();
