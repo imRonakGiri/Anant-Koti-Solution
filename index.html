@@ -21,13 +21,26 @@
         menu: ["home", "services", "gallery", "contect"],
       };
     </script>
+    <style>
+      @media only screen and (min-width: 38rem) {
+        main > .content {
+          left: 20vw;
+          width: 79vw;
+          display: flex;
+          position: absolute;
+          background: url(/img/man.png);
+          background-repeat: no-repeat;
+          border: 2px solid rgb(248, 248, 248);
+        }
+      }
+    </style>
     <script src="main.js" async></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="imb">
-    <header>
+    <!-- <header style="display: none">
       <div contenteditable="true" class="title">Anant Koti Solution</div>
-    </header>
+    </header> -->
     <main></main>
     <footer>
       <div class="copyright">Copyright &copy;2018-2021 Anant Koti Solution</div>

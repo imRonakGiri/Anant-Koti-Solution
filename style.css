@@ -134,28 +134,21 @@
   .menu li.acctive {
     font-weight: 900;
     font-size: 1.2rem;
-    color: #d73b30;
+    color: #0a8907;
+  }
+  li.acctive::before {
+    content: "* ";
   }
   main > .book {
     width: 1vw;
     left: 20vw;
-    height: 89vh;
+    height: 95vh;
     position: absolute;
     background: rgb(94, 9, 97);
   }
-  main > .content {
-    left: 20vw;
-    width: 79vw;
-    display: flex;
-    position: absolute;
-    /* background: rgb(255, 255, 255); */
-    background: url(/img/man.png);
-    background-repeat: no-repeat;
-    border: 2px solid rgb(248, 248, 248);
-  }
   main > .content > * {
     width: 74%;
-    height: 89vh;
+    height: 95vh;
     font-size: 1.2rem;
     text-align: center;
     flex-direction: column;
