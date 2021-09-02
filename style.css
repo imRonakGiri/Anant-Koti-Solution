@@ -7,17 +7,17 @@
     box-sizing: border-box;
     text-align: center;
   }
-  header > .social-menu > ul {
+  .social-menu > ul {
     bottom: 0%;
     height: 8vh;
     width: 100vw;
     display: flex;
     list-style: none;
     position: absolute;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-evenly;
   }
-  header > .social-menu > ul a {
+  .social-menu > ul a {
     font-size: 2.2rem;
   }
   .pc {
@@ -40,7 +40,7 @@
   li.menu-itm.acctive {
     color: #1b2155;
     font-size: 1.4em;
-    margin-bottom: 60.5vh;
+    margin-bottom: 58.5vh;
     transition-delay: 0.1s;
     text-shadow: 1px 3px 6px rgb(21, 40, 102);
   }
