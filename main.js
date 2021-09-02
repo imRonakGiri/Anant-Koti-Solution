@@ -9,12 +9,19 @@ $6("contect-1", ".contect");
 $6("contect-2", ".contect");
 $6("contect-3", ".contect");
 $6("book", "main");
+$6("home_one", ".home");
+$6("home_two", ".home");
 website.menu.forEach((m) => {
   i = $2("li");
   i.setAttribute("class", "menu-itm");
   $4(m.toUpperCase(), ".menu");
 });
 $_.addEventListener("click", RoanakGiri);
+// home
+i = $2("h2");
+$4("I'm an Anant Koti Solution ", ".home_one");
+i = $2("p");
+$4("Powered by an individual freelancer", ".home_one");
 // Services
 i = $2("h3");
 $4("National & InterNational Courier Booking", ".services");

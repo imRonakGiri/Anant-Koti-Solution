@@ -146,16 +146,48 @@
   main > .content {
     left: 20vw;
     width: 79vw;
+    display: flex;
     position: absolute;
+    /* background: rgb(255, 255, 255); */
+    background: url(/img/man.png);
+    background-repeat: no-repeat;
     border: 2px solid rgb(248, 248, 248);
-    background: rgb(255, 255, 255);
   }
   main > .content > * {
     width: 74%;
     height: 89vh;
+    font-size: 1.2rem;
     text-align: center;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+  }
+  .home_one {
+    width: 79vw;
+    font-weight: 545;
+    flex-direction: column;
+  }
+  .home_one > *:nth-child(1) {
+    margin-bottom: 26%;
+    color: rgb(255, 174, 0);
+    font-family: Georgia, sans-serif;
+    text-shadow: 2px 2px 5px darkblue;
+  }
+  .home_one > *:nth-child(2) {
+    margin-bottom: 6%;
+    font-family: Georgia, sans-serif;
+    color: rgb(32, 53, 157);
+  }
+  @media only screen and (min-width: 50rem) {
+    .home_one {
+      margin-left: 10%;
+    }
+    .home_one > *:nth-child(1) {
+      color: rgb(255, 174, 0);
+      margin-bottom: 1%;
+    }
+    .home_one > *:nth-child(2) {
+      margin-bottom: 28%;
+    }
   }
   .copyright {
     bottom: 0%;
