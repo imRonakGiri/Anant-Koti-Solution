@@ -109,11 +109,7 @@
     background: #ffffff;
   }
   .title {
-    height: 6vh;
-    font-size: 2rem;
-    font-weight: 500;
-    color: #82241d;
-    background-color: #00acc1;
+    display: none;
   }
   .menu {
     height: 85vh;
@@ -181,6 +177,12 @@
     .home_one > *:nth-child(2) {
       margin-bottom: 28%;
     }
+  }
+  #pro {
+    right: 1%;
+    bottom: 7%;
+    position: absolute;
+    width: 20%;
   }
   .copyright {
     bottom: 0%;
