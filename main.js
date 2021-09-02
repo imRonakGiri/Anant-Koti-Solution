@@ -20,7 +20,7 @@ $_.addEventListener("click", RoanakGiri);
 i = $2("h2");
 $4("I'm an Anant Koti Solution ", ".home_one");
 i = $2("p");
-$4("Powered by an individual freelancer", ".home_one");
+$4("Powered by an individual Freelancer", ".home_one");
 i = $2("img");
 i.setAttribute("alt", "programing languages");
 i.setAttribute("src", "/img/cmplg.png");
@@ -32,7 +32,7 @@ $4(
   ".services"
 );
 i = $2("h2");
-$4(`RonakGiri Goswami`, ".contect-1");
+$4(`RonakGiri A Goswami`, ".contect-1");
 i = $2("p");
 $4(`GoswamiRonakGiri38@gmail.com`, ".contect-2");
 i = $2("p");
