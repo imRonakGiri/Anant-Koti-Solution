@@ -24,18 +24,21 @@ $4("I'm an Anant Koti Solution ", ".home_one");
 i = $2("p");
 $4("Powered by an individual freelancer", ".home_one");
 // Services
-i = $2("h3");
-$4("National & InterNational Courier Booking", ".services");
+i = $2("img");
+i.setAttribute("alt", "programing languages");
+i.setAttribute("src", "/img/cmplg.png");
+$3(".services");
+$4("About Me", ".services");
 i = $2("p");
 $4(
-  "International shipping costs more than domestic delivery because of the extra steps taken before the parcel arrives at its destination. Once the parcel is cleared, the parcel is sent to the next courier to complete the last leg of the journey.",
+  "I am RonakGiri Goswami from Surat Gujarat. I am a digital marketer and consultant and full stack web developer If you need any help, let me know...",
   ".services"
 );
 // Contect
 i = $2("h2");
 $4(`RonakGiri Goswami`, ".contect-1");
 i = $2("p");
-$4(`+91 6354852905<br>GoswamiRonakGiri38@gmail.com `, ".contect-2");
+$4(`GoswamiRonakGiri38@gmail.com`, ".contect-2");
 i = $2("p");
 $4(`Punagam-395010, Surat`, ".contect-3");
 $(".menu *:nth-child(1)").classList.add("acctive");

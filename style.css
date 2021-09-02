@@ -170,6 +170,7 @@
     color: rgb(32, 53, 157);
   }
   .contect > *:nth-child(1) {
+    font-size: 2rem;
     position: absolute;
     right: 3%;
     top: 20%;
@@ -177,12 +178,35 @@
   .contect > *:nth-child(2) {
     position: absolute;
     right: 3%;
-    top: 26%;
+    top: 29%;
   }
   .contect > *:nth-child(3) {
     position: absolute;
     left: 7%;
     bottom: 5%;
+  }
+  @media only screen and (max-width: 63rem) {
+    .contect > *:nth-child(1) {
+      font-size: 1.3rem;
+      line-height: 0%;
+    }
+    .contect > *:nth-child(2) {
+      font-size: 1.1rem;
+      line-height: 0%;
+    }
+  }
+  .services > *:nth-child(1) {
+    top: 4%;
+    right: 2%;
+    width: 40%;
+    position: absolute;
+  }
+  .services > *:nth-child(2) {
+    position: absolute;
+    text-align: justify;
+    bottom: 9%;
+    left: 2%;
+    right: 27%;
   }
   @media only screen and (min-width: 50rem) {
     .home_one {
@@ -194,6 +218,12 @@
     }
     .home_one > *:nth-child(2) {
       margin-bottom: 28%;
+    }
+  }
+  @media only screen and (max-width: 50rem) {
+    .contect > *:nth-child(1) {
+      bottom: -50%;
+      left: -33%;
     }
   }
   .pc {
