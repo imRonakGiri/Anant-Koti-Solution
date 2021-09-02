@@ -37,7 +37,7 @@ $4(`RonakGiri Goswami`, ".contect-1");
 i = $2("p");
 $4(`+91 6354852905<br>GoswamiRonakGiri38@gmail.com `, ".contect-2");
 i = $2("p");
-$4(`175 Nandanvan Soc, Near Matrushakti, Punagam-395010, Surat`, ".contect-3");
+$4(`Punagam-395010, Surat`, ".contect-3");
 $(".menu *:nth-child(1)").classList.add("acctive");
 dNone();
 $(".home").style.display = "";

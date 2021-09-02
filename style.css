@@ -169,6 +169,21 @@
     font-family: Georgia, sans-serif;
     color: rgb(32, 53, 157);
   }
+  .contect > *:nth-child(1) {
+    position: absolute;
+    right: 3%;
+    top: 20%;
+  }
+  .contect > *:nth-child(2) {
+    position: absolute;
+    right: 3%;
+    top: 26%;
+  }
+  .contect > *:nth-child(3) {
+    position: absolute;
+    left: 7%;
+    bottom: 5%;
+  }
   @media only screen and (min-width: 50rem) {
     .home_one {
       margin-left: 10%;
