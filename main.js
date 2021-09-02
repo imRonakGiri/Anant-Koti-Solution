@@ -17,6 +17,7 @@ website.menu.forEach((m) => {
   $4(m.toUpperCase(), ".menu");
 });
 $_.addEventListener("click", RoanakGiri);
+
 // home
 i = $2("h2");
 $4("I'm an Anant Koti Solution ", ".home_one");

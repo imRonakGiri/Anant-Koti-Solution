@@ -20,6 +20,7 @@
       website = {
         menu: ["home", "services", "gallery", "contect"],
       };
+      $2("img")
     </script>
     <style>
       @media only screen and (min-width: 38rem) {
@@ -30,6 +31,7 @@
           position: absolute;
           background: url(/img/man.png);
           background-repeat: no-repeat;
+          background-size: 70vh;
           border: 2px solid rgb(248, 248, 248);
         }
       }
@@ -38,10 +40,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="imb">
-    <!-- <header style="display: none">
-      <div contenteditable="true" class="title">Anant Koti Solution</div>
-    </header> -->
-    <main></main>
+    <header>
+      <div class="title">Anant Koti Solution</div>
+    </header>
+    <main><img id="pro" src="/img/programmers.png" alt="programmers vector"></main>
     <footer>
       <div class="copyright">Copyright &copy;2018-2021 Anant Koti Solution</div>
     </footer>
