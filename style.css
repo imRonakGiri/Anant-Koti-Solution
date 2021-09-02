@@ -1,4 +1,4 @@
-@media only screen and (max-width: 38rem) {
+@media only screen and (max-width: 40rem) {
   *,
   *::before,
   *::after {
@@ -7,21 +7,18 @@
     box-sizing: border-box;
     text-align: center;
   }
-
   header > .social-menu > ul {
-    bottom: 25%;
-    height: 24vh;
+    bottom: 0%;
+    height: 8vh;
+    width: 100vw;
     display: flex;
-    padding-left: 0%;
+    list-style: none;
     position: absolute;
-    flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
   }
   header > .social-menu > ul a {
-    font-size: 2rem;
-  }
-  header > .social-menu > * a {
-    padding: 10px;
+    font-size: 2.2rem;
   }
   .pc {
     display: none;
@@ -94,12 +91,7 @@
     top: 17vh;
   }
   footer {
-    bottom: 0%;
-    height: 8vh;
-    width: 100%;
-    position: absolute;
-    color: rgb(0, 0, 0);
-    text-shadow: 1px 3px 5px rgb(28, 49, 117);
+    display: none;
   }
   @media only screen and (max-width: 21rem) {
     header .title {
@@ -110,7 +102,7 @@
     }
   }
 }
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 40rem) {
   *,
   *::before,
   *::after {

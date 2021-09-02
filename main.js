@@ -17,13 +17,10 @@ website.menu.forEach((m) => {
   $4(m.toUpperCase(), ".menu");
 });
 $_.addEventListener("click", RoanakGiri);
-
-// home
 i = $2("h2");
 $4("I'm an Anant Koti Solution ", ".home_one");
 i = $2("p");
 $4("Powered by an individual freelancer", ".home_one");
-// Services
 i = $2("img");
 i.setAttribute("alt", "programing languages");
 i.setAttribute("src", "/img/cmplg.png");
@@ -34,7 +31,6 @@ $4(
   "I am RonakGiri Goswami from Surat Gujarat. I am a digital marketer and consultant and full stack web developer If you need any help, let me know...",
   ".services"
 );
-// Contect
 i = $2("h2");
 $4(`RonakGiri Goswami`, ".contect-1");
 i = $2("p");
