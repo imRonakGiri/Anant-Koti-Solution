@@ -7,7 +7,7 @@
     box-sizing: border-box;
     text-align: center;
   }
-  #pro {
+  .pc {
     display: none;
   }
   body {
@@ -181,7 +181,7 @@
       margin-bottom: 28%;
     }
   }
-  #pro {
+  .pc {
     right: 1%;
     bottom: 7%;
     position: absolute;
