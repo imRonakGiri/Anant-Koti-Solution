@@ -89,10 +89,14 @@
     top: 22vh;
   }
   div.services {
-    top: 17vh;
+    top: 22vh;
     left: 15vw;
     width: 70vw;
     border: solid 1px rgb(133, 173, 187);
+  }
+  .services > *:nth-child(1) {
+    font-weight: 600;
+    font-size: 1.2rem;
   }
   div.home {
     top: 10vh;
@@ -125,4 +129,3 @@
     }
   }
 }
-/* -----pc-------  */

@@ -32,15 +32,8 @@ var i = $2("h2");
 $4("I'm an Anant Koti Solution ", ".home_one");
 var i = $2("p");
 $4("Powered by an individual Freelancer", ".home_one");
-// var i = $2("img");
-// i.setAttribute("alt", "programing languages");
-// i.setAttribute("src", "/img/cmplg.png");
-// $3(".services");
 var i = $2("h2");
-$4(
-  "*<strong>Website <span id='hello'>Front-end Design</span></strong>",
-  ".services"
-);
+$4("<strong><span id='hello'>Front-end Design</span></strong>", ".services");
 i = $2("p");
 $4(
   "I am RonakGiri Goswami from Surat Gujarat. I am a digital marketer and consultant and full stack web developer If you need any help, let me know...",
