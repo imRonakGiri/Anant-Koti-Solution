@@ -1,4 +1,15 @@
-i = $2("ul");
+import Good from "./js.js";
+const $_ = document,
+  $ = (i) => $_.querySelector(i),
+  $2 = (i) => $_.createElement(i),
+  $3 = (m) => $(m).appendChild(i),
+  $4 = (im, m) => ((i.innerHTML = im), $3(m)),
+  $5 = (m, im) => (i.classList.add(m), $3(im)),
+  $6 = (a, b) => ((i = $2("div")), $5(a, b)),
+  website = {
+    menu: ["home", "services", "gallery", "contect"],
+  };
+var i = $2("ul");
 $5("menu", "main");
 $6("content", "main");
 $6("home", ".content");
@@ -16,16 +27,20 @@ website.menu.forEach((m) => {
   i.setAttribute("class", "menu-itm");
   $4(m.toUpperCase(), ".menu");
 });
-$_.addEventListener("click", RoanakGiri);
-i = $2("h2");
+$2("img");
+var i = $2("h2");
 $4("I'm an Anant Koti Solution ", ".home_one");
-i = $2("p");
+var i = $2("p");
 $4("Powered by an individual Freelancer", ".home_one");
-i = $2("img");
-i.setAttribute("alt", "programing languages");
-i.setAttribute("src", "/img/cmplg.png");
-$3(".services");
-$4("About Me", ".services");
+// var i = $2("img");
+// i.setAttribute("alt", "programing languages");
+// i.setAttribute("src", "/img/cmplg.png");
+// $3(".services");
+var i = $2("h2");
+$4(
+  "*<strong>Website <span id='hello'>Front-end Design</span></strong>",
+  ".services"
+);
 i = $2("p");
 $4(
   "I am RonakGiri Goswami from Surat Gujarat. I am a digital marketer and consultant and full stack web developer If you need any help, let me know...",
@@ -38,13 +53,14 @@ $4(`GoswamiRonakGiri38@gmail.com`, ".contect-2");
 i = $2("p");
 $4(`Punagam-395010, Surat`, ".contect-3");
 $(".menu *:nth-child(1)").classList.add("acctive");
-dNone();
+Good.None();
 $(".home").style.display = "";
+setInterval(Good.Change, 2000);
 function RoanakGiri(i) {
-  for (w = 1; w <= website.menu.length; w++) {
-    pathofclick = ".menu *:nth-child(" + w + ")";
+  for (let w = 1; w <= website.menu.length; w++) {
+    var pathofclick = ".menu *:nth-child(" + w + ")";
     if (i.path[0].innerHTML === $(pathofclick).innerHTML) {
-      dNone();
+      Good.None();
       $(".acctive").classList.remove("acctive");
       i.path[0].classList.add("acctive");
       switch ($(".acctive").innerHTML) {
@@ -59,13 +75,9 @@ function RoanakGiri(i) {
           break;
         case "GALLERY":
           $(".gallery").style.display = "";
+          $(".content").style.background = "none";
       }
     }
   }
 }
-function dNone() {
-  $(".gallery").style.display = "none";
-  $(".home").style.display = "none";
-  $(".services").style.display = "none";
-  $(".contect").style.display = "none";
-}
+$_.addEventListener("click", RoanakGiri);

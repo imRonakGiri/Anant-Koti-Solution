@@ -9,36 +9,37 @@
       content="I am a digital marketer and consultant and full stack web developer If you need any help, let me know!"
     />
     <title>Anant Koti Solution</title>
-    <script>
+    <script type="module">
       const $_ = document,
         $ = (i) => $_.querySelector(i),
         $2 = (i) => $_.createElement(i),
         $3 = (m) => $(m).appendChild(i),
         $4 = (im, m) => ((i.innerHTML = im), $3(m)),
         $5 = (m, im) => (i.classList.add(m), $3(im)),
-        $6 = (a, b) => ((i = $2("div")), $5(a, b));
-      website = {
-        menu: ["home", "services", "gallery", "contect"],
-      };
-      $2("img");
+        $6 = (a, b) => ((i = $2("div")), $5(a, b)),
+        website = {
+          menu: ["home", "services", "gallery", "contect"],
+        };
     </script>
+    <script type="module" src="./js.js" defer></script>
     <style>
       @media only screen and (min-width: 40rem) {
         main > .content {
           left: 20vw;
           width: 79vw;
+          z-index: -100;
           display: flex;
           position: absolute;
-          z-index: -100;
           background: url(/img/man.png);
           background-repeat: no-repeat;
-          background-size: 70vh;
+          background-size: 65vh;
           border: 2px solid rgb(248, 248, 248);
         }
       }
     </style>
-    <script src="main.js" async></script>
-    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js" defer></script>
+    <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="pc.css" />
   </head>
   <body class="imb">
     <header>
@@ -77,7 +78,7 @@
       </div>
     </header>
     <main>
-      <img class="pc" src="/img/programmers.png" alt="programmers vector" />
+      <!-- <img class="pc" src="/img/programmers.png" alt="programmers vector" /> -->
     </main>
     <footer>
       <div class="copyright">Copyright &copy;2018-2021 Anant Koti Solution</div>
