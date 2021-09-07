@@ -63,7 +63,7 @@
     justify-content: space-evenly;
   }
   div.contect {
-    top: 30vh;
+    top: 33vh;
   }
   div.contect > *:nth-child(1) {
     top: 0%;
@@ -107,10 +107,12 @@
   div.home .home_one > *:first-child {
     top: 40%;
     left: 0%;
-    width: 100%;
+    width: 95%;
+    color: #2e5ba2;
+    font-size: 1.4rem;
     position: absolute;
-    font-size: 1.6rem;
-    text-shadow: 2px 2px 5px green;
+    text-align: center;
+    text-shadow: 2px 2px 5px #97b997;
   }
   div.home .home_one > *:nth-child(2) {
     top: 52%;
