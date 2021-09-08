@@ -74,6 +74,11 @@
     font-family: Georgia, sans-serif;
     color: rgb(32, 53, 157);
   }
+  .home_two > *:nth-child(1) {
+    position: absolute;
+    bottom: 18vh;
+    left: 20vw;
+  }
   .contect > *:nth-child(1) {
     font-size: 2rem;
     position: absolute;
@@ -177,6 +182,9 @@
     .services > *:nth-child(1) {
       top: 30%;
       font-size: 1rem;
+    }
+    .home_two > *:nth-child(1) {
+      font-size: 1.3rem;
     }
   }
 }
