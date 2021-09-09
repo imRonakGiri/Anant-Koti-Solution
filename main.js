@@ -11,17 +11,7 @@ const $_ = document,
 var l = 0;
 var i = $2("ul");
 $5("menu", "main");
-$6("content", "main");
-$6("home", ".content");
-$6("services", ".content");
-$6("blogs", ".content");
-$6("contect", ".content");
-$6("contect-1", ".contect");
-$6("contect-2", ".contect");
-$6("contect-3", ".contect");
-$6("book", "main");
-$6("home_one", ".home");
-$6("home_two", ".home");
+init("elements");
 website.menu.forEach((m) => {
   i = $2("li");
   i.setAttribute("class", "menu-itm");
@@ -69,21 +59,37 @@ if (window.innerWidth < 640) {
   );
 }
 $(".menu *:nth-child(1)").classList.add("acctive");
-website.menu.forEach((m) => {
-  var i = m.toUpperCase();
-  if ($(".acctive").innerHTML === i) {
-    $(`.${m}`).style.display = "";
-  } else {
-    $(`.${m}`).style.display = "none";
-  }
-});
-setInterval(Change, 2000);
-function Change() {
+init("cssAcctive");
+setInterval(() => {
   if (l === 0) {
     $("#hello").innerHTML = "Back-end Devlopment";
     l = 1;
   } else if (l === 1) {
     $("#hello").innerHTML = "Front-end Design";
     l = 0;
+  }
+}, 1200);
+function init(param) {
+  if (param === "elements") {
+    $6("content", "main");
+    $6("home", ".content");
+    $6("services", ".content");
+    $6("blogs", ".content");
+    $6("contect", ".content");
+    $6("contect-1", ".contect");
+    $6("contect-2", ".contect");
+    $6("contect-3", ".contect");
+    $6("book", "main");
+    $6("home_one", ".home");
+    $6("home_two", ".home");
+  } else if (param === "cssAcctive") {
+    website.menu.forEach((m) => {
+      var i = m.toUpperCase();
+      if ($(".acctive").innerHTML === i) {
+        $(`.${m}`).style.display = "";
+      } else {
+        $(`.${m}`).style.display = "none";
+      }
+    });
   }
 }
