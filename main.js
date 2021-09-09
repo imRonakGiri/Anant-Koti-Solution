@@ -61,11 +61,13 @@ i = $2("h2");
 $4(`RonakGiri A Goswami`, ".contect-1");
 i = $2("p");
 $4(`GoswamiRonakGiri38@gmail.com`, ".contect-2");
-i = $2("div");
-$4(
-  `<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14877.984472594297!2d72.8733335!3d21.2121667!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9d4d3173cf956fa4!2sANANT%20KOTI%20SOLUTION!5e0!3m2!1sen!2sin!4v1631153442086!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>`,
-  ".contect-3"
-);
+if (window.innerWidth < 640) {
+  i = $2("div");
+  $4(
+    `<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14877.984472594297!2d72.8733335!3d21.2121667!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9d4d3173cf956fa4!2sANANT%20KOTI%20SOLUTION!5e0!3m2!1sen!2sin!4v1631153442086!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>`,
+    ".contect-3"
+  );
+}
 $(".menu *:nth-child(1)").classList.add("acctive");
 website.menu.forEach((m) => {
   var i = m.toUpperCase();
