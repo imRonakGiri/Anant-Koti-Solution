@@ -5,6 +5,7 @@
   *::after {
     margin: 0%;
     padding: 0%;
+    overflow: hidden;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
@@ -80,20 +81,18 @@
     left: 20vw;
   }
   .contect > *:nth-child(1) {
+    top: 20%;
+    right: 3%;
     font-size: 2rem;
     position: absolute;
-    right: 3%;
-    top: 20%;
   }
   .contect > *:nth-child(2) {
-    position: absolute;
-    right: 3%;
     top: 29%;
+    right: 3%;
+    position: absolute;
   }
   .contect > *:nth-child(3) {
-    position: absolute;
-    left: 7%;
-    bottom: 5%;
+    display: none;
   }
   header > .social-menu > * {
     top: 2%;
