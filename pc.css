@@ -94,17 +94,8 @@
   .contect > *:nth-child(3) {
     display: none;
   }
-  header > .social-menu > * {
-    top: 2%;
-    right: 2%;
-    width: 260px;
-    display: flex;
-    list-style: none;
-    position: absolute;
-    justify-content: space-evenly;
-  }
-  .social-menu li {
-    margin: 5%;
+.social-menu {
+    justify-content: flex-end;
   }
   .social-menu li a {
     font-size: 2rem;
