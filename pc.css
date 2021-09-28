@@ -1,5 +1,4 @@
 @media only screen and (min-width: 40rem) {
-  /* ---------Globle-Style-------------- */
   *,
   *::before,
   *::after {
@@ -145,7 +144,6 @@
     position: absolute;
     font-family: "Times New Roman", Times, serif;
   }
-
   @media only screen and (min-width: 50rem) {
     .home_one {
       margin-left: 10%;
@@ -167,7 +165,6 @@
       font-size: 1.1rem;
     }
   }
-
   @media only screen and (max-width: 57rem) {
     .services > *:nth-child(1) {
       top: 30%;
