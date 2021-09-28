@@ -37,7 +37,6 @@
     color: #1b2155;
     font-size: 1.4em;
     margin-bottom: 58.5vh;
-    transition-delay: 0.1s;
     text-shadow: 1px 3px 6px rgb(21, 40, 102);
   }
   .menu li:not(.acctive) {
