@@ -81,13 +81,14 @@
   }
   .contect > *:nth-child(1) {
     top: 20%;
-    right: 3%;
+    right: 12%;
     font-size: 2rem;
+    color: #20459c;
     position: absolute;
   }
   .contect > *:nth-child(2) {
     top: 29%;
-    right: 3%;
+    right: 9%;
     position: absolute;
   }
   .contect > *:nth-child(3) {
@@ -120,8 +121,9 @@
     top: 35%;
     right: 10%;
     width: 40%;
+    color:brown;
     text-align: left;
-    font-size: 1.3rem;
+    font-size: 2.2rem;
     position: absolute;
   }
   .services > *:nth-child(2) {
