@@ -41,7 +41,7 @@ $4("Powered by an individual Freelancer", ".home_one");
 var i = $2("h2");
 $4("<span>I don't use WordPress,<br>Even if I like it.</span>", ".home_two");
 var i = $2("h2");
-$4("<strong><span id='hello'>Front-end Design</span></strong>", ".services");
+$4("<span id='hello'>Front-end Design</span>", ".services");
 i = $2("p");
 $4(
   "I am RonakGiri Goswami from Surat Gujarat. I am a digital marketer and consultant and full stack web developer If you need any help, let me know...",
@@ -50,7 +50,7 @@ $4(
 i = $2("h2");
 $4(`RonakGiri A Goswami`, ".contect-1");
 i = $2("p");
-$4(`GoswamiRonakGiri38@gmail.com`, ".contect-2");
+$4(`<h4>GoswamiRonakGiri38<bold>AT</bold>gmail<bold>DOT</bold>com</h4>`, ".contect-2");
 if (window.innerWidth < 640) {
   i = $2("div");
   $4(
